@@ -12,7 +12,7 @@
    + RST →Pin 22 (GPIO 25 - or your choice)
    + BL (Backlight) →Pin 17 (3.3V, or a PWM pin if you want software brightness control)
 
-Once all pins are connected, boot the pi and the screen should be on and fully white
+	Once all pins are connected, boot the pi and the screen should be on and fully white
 4. Next, open the boot config file with this command: `sudo nano /boot/firmware/config.txt`. Once that file is open, navigate to the section labelled `[all]` and paste this: `	dtoverlay=fbtft,spi0-0,ili9341,speed=16000000,dc_pin=24,reset_pin=25,framebuffer_width=320,framebuffer_height=240`. Use `Ctrl+O` to save the current file and `Ctrl+X` to exit the file
 5. Next, open the cmdline config file with this command `sudo nano /boot/firmware/cmdline.txt`. Once in the file, move to the end of the line, add a space, and paste this: `	fbcon=map:10 fbcon=font:VGA8x8 fbcon=rotate:3
 `, use the VGA8x8 to change the size of the font, use the rotate to edit the rotation of the screen.
