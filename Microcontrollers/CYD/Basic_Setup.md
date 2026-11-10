@@ -24,15 +24,15 @@ monitor_speed = 115200
 upload_speed = 921600
 
 lib_deps =
-    bodmer/TFT_eSPI @ ^2.5.43
-    sstaub/XPT2046_Touchscreen @ ^1.4.0
+    TFT_eSPI
+    XPT2046_Touchscreen
 
 build_flags =
     -D USER_SETUP_LOADED=1
     -D USER_SETUP_ID=25
     -include $PROJECT_DIR/include/User_CYD_Setup.h
 ```
-## Step 3: Create Custom Display Setup File
+## Step 3: Create Custom Display Setup File (Include/User_CYD_Setup.h)
 ```
 #pragma once
 
