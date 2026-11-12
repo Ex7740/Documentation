@@ -17,8 +17,8 @@ board = esp32dev
 framework = arduino
 
 lib_deps =
-    bodmer/TFT_eSPI@^2.5.33
-    https://github.com/PaulStoffregen/XPT2046_Touchscreen.git#v1.4
+    TFT_eSPI
+    XPT2046_Touchscreen
 
 monitor_speed = 115200
 monitor_filters = esp32_exception_decoder
